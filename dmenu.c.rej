@@ -1,0 +1,10 @@
+--- dmenu.c
++++ dmenu.c
+@@ -649,6 +658,7 @@ setup(void)
+ 		x = info[i].x_org;
+ 		y = info[i].y_org + (topbar ? 0 : info[i].height - mh);
+ 		mw = info[i].width;
++
+ 		XFree(info);
+ 	} else
+ #endif
